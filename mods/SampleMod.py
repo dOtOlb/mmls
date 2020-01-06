@@ -24,5 +24,4 @@ class SampleMod:
         pass
 
     __input_from_file = input_from_file
-
     __run = run
