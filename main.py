@@ -7,6 +7,7 @@ import operator
 # import modules
 import LogBasedMod
 
+# use the python parser to parse the command line arguments
 def parse_args():
     parser = ArgumentParser()
     parser.add_argument('-v', '--version', dest='ver', required=True, help="version 1 or 2")
