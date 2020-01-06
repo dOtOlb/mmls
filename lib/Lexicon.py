@@ -17,6 +17,7 @@ class Lexicon:
 
         return self.corpus[lexicon_lower]
 
+    """To Do: add another getter call for the corpus"""
     def get_id(self, lexicon):
         lexicon_lower = lexicon.lower()
         return (None if lexicon_lower not in self.sorted_terms
