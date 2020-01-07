@@ -14,9 +14,11 @@ class InvertedIndex:
         elif item_id not in self.index[lexicon_id]:
             self.index[lexicon_id].append(item_id)
 
+    # search method
     def search(self, lexicon_id):
         return [] if lexicon_id not in self.index.keys() else self.index[lexicon_id]
 
+    # uniq method
     def uniq(self, seq):
         seen = set()
         seen_add = seen.add
