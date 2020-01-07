@@ -9,6 +9,7 @@ class Interpreter:
         self.items = items
         self.lexicon = lexicon
 
+    # interpret method
     def interpret(self, command):
         tokens = command.split()
         if tokens[0] == 'ADD':
@@ -31,6 +32,7 @@ class Interpreter:
             return self.__wquery(tokens[1], type_boost, id_boost,
                                     command[len(tokens[1]) + len(tokens[2]) + boost_str_len + 9:-1])
 
+    # add method
     def add(self, type, id, score, data):
         self.items[id] = ItemRecord(type, id, float(score), data)
         tokens = data.split()
@@ -39,6 +41,7 @@ class Interpreter:
             self.inverted_index.add(lexicon_id, id)
         return ''
 
+    # remove method
     def remove(self, id):
         self.items[id].delete()
         return ''
