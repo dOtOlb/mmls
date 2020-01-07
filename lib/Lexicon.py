@@ -3,8 +3,10 @@ import datetime
 import operator
 
 class Lexicon:
-    """An implementation of the corpus"""
-    """To Do: add another getter call for the corpus"""
+    """
+    An implementation of the corpus
+    To Do: add another getter call for the corpus
+    """
     def __init__(self):
         self.corpus = {}
         self.sorted_terms = []
