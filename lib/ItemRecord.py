@@ -29,6 +29,7 @@ class ItemRecord:
     def get_type(self):
         return self.type
 
+    # get_data method
     def get_data(self):
         return self.data
 
