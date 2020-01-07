@@ -14,6 +14,7 @@ def parse_args():
     parser.add_argument('-m', '--module', dest='mod', required=True, help="module to use")
     return parser.parse_args()
 
+# main program
 def main():
     args = parse_args()
 
