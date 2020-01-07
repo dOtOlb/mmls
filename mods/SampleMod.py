@@ -10,6 +10,7 @@ class SampleMod:
     __init__(self):
         self.store = Store()
 
+    # input_from_file method
     __input_from_file(fh):
         count_commands = 0
         for line in fh:
