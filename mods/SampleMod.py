@@ -22,6 +22,7 @@ class SampleMod:
             count_commands -= 1
             if (count_commands == 0): break
 
+    # run method
     __run():
         pass
 
