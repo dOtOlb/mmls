@@ -21,6 +21,7 @@ class ItemRecord:
     def get_time(self):
         return self.time
 
+    # get_score getter method
     def get_score(self):
         return self.score
 
