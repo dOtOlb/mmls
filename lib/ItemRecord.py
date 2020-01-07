@@ -33,6 +33,7 @@ class ItemRecord:
     def get_data(self):
         return self.data
 
+    # is_deleted method to check if it is deleted
     def is_deleted(self):
         return not self.active
 
