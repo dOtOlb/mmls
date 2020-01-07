@@ -67,6 +67,7 @@ class Interpreter:
         final_hits.sort(key = key_func('score', 'time'), reverse = True)
         return (" ".join(final_hits[0:int(count)]) or " ")
 
+    # wquery method
     def wquery(self, count, type_boost, id_boost, query_str):
         tokens = query_str.split()
         hit_lists = [ self.inverted_index.search_multi(self.lexicon.search(token))
