@@ -46,12 +46,14 @@ class Interpreter:
         self.items[id].delete()
         return ''
 
+    # combine method
     def combine(self, lists):
         result = set(lists[0])
         for l in lists:
             result &= set(l)
         return [ item for item in result if not self.items[item].is_deleted() ]
 
+    # query method
     def query(self, count, query_str):
         tokens = query_str.split()
         hit_lists = [ self.inverted_index.search_multi(self.lexicon.search(token))
