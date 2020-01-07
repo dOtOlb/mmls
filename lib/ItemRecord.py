@@ -17,6 +17,7 @@ class ItemRecord:
     def get_id(self):
         return self.id
 
+    # get_time getter method
     def get_time(self):
         return self.time
 
