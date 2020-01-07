@@ -24,6 +24,7 @@ class InvertedIndex:
         seen_add = seen.add
         return [ x for x in seq if not (x in seen or seen_add(x)) ]
 
+    # search_multi method
     def search_multi(self, lexicon_ids):
         result = []
         for lexicon_id in lexicon_ids:
