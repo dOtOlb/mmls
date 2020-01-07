@@ -7,6 +7,7 @@ class Store:
     def __init__(self):
         self.data = []
 
+    # add method
     def add(self, item):
         self.data.append(item)
 
