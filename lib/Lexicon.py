@@ -27,6 +27,7 @@ class Lexicon:
         return (None if lexicon_lower not in self.sorted_terms
                         else self.corpus[lexicon_lower])
 
+    # search method
     def search(self, lexicon):
         lexicon_lower = lexicon.lower()
         if not self.sorted_terms:
