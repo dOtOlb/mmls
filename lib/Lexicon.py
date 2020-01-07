@@ -33,6 +33,7 @@ class Lexicon:
         if not self.sorted_terms:
             return []
 
+        # initialize the variables used
         matches = []
         max_index = len(self.sorted_terms) - 1
         min_index = 0
