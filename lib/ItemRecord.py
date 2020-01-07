@@ -25,6 +25,7 @@ class ItemRecord:
     def get_score(self):
         return self.score
 
+    # get_type getter method
     def get_type(self):
         return self.type
 
