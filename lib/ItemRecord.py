@@ -13,6 +13,7 @@ class ItemRecord:
         self.time = datetime.datetime.now()
         self.active = True
 
+    # get_id getter method
     def get_id(self):
         return self.id
 
