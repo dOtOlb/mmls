@@ -41,6 +41,7 @@ class ItemRecord:
     def delete(self):
         self.active = False
 
+    # need to compute the boost score
     def boost_score(self, boost, start_over):
         self.boosted_score = (self.score if start_over
                                 else self.boosted_score) * boost
