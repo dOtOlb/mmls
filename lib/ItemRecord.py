@@ -37,6 +37,7 @@ class ItemRecord:
     def is_deleted(self):
         return not self.active
 
+    # delete method
     def delete(self):
         self.active = False
 
