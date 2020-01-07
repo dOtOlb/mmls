@@ -39,6 +39,7 @@ class Lexicon:
         min_index = 0
         index = -1
 
+        # first round
         if lexicon_lower > self.sorted_terms[max_index]:
             return []
         if lexicon_lower == self.sorted_terms[max_index]:
@@ -59,6 +60,7 @@ class Lexicon:
                     max_index = index
                 index = (max_index + min_index) // 2
 
+        # second round
         index = index + 1
         while index < len(self.sorted_terms):
             if self.sorted_terms[index].startswith(lexicon_lower):
