@@ -7,6 +7,7 @@ class InvertedIndex:
     def __init__(self):
         self.index = {}
 
+    # add method
     def add(self, lexicon_id, item_id):
         if lexicon_id not in self.index.keys():
             self.index[lexicon_id] = [item_id]
