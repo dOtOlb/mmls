@@ -8,6 +8,7 @@ class Lexicon:
         self.corpus = {}
         self.sorted_terms = []
 
+    # add method
     def add(self, lexicon):
         lexicon_lower = lexicon.lower()
         if lexicon_lower not in self.corpus.keys():
